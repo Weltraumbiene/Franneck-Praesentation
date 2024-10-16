@@ -1,0 +1,64 @@
+body {
+    background-color: #5a5a5a; /* Heller Grauton */
+}
+
+/* To-do-Listen Container zentrieren und Breite begrenzen */
+#todo-list {
+    max-width: 600px; /* Maximale Breite des To-do-Listenbereichs */
+    margin: 0 auto;   /* Zentrieren des Containers */
+    padding: 10px;    /* Optional: Innenabstand für besseren Look */
+}
+
+/* Eingabefeld anpassen und zentrieren */
+#todo-form {
+    max-width: 600px;  /* Maximale Breite des Formulars */
+    margin: 20px auto; /* Zentrieren des Eingabefelds und Abstand nach oben/unten */
+}
+
+#todo-input {
+    width: 100%;        /* Eingabefeld passt sich der maximalen Breite an */
+    padding: 10px;      /* Innenabstand für bessere Lesbarkeit */
+    border: 1px solid #ccc; /* Leichte Umrandung */
+    border-radius: 5px; /* Abgerundete Ecken */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Leichter Schatten für Tiefe */
+}
+
+#todo-form button {
+    margin-top: 10px;   /* Abstand oberhalb des Buttons */
+    width: 100%;        /* Button auf die gleiche Breite wie das Eingabefeld */
+}
+
+/* Styling für die Buttons */
+.btn-primary {
+    background-color: blueviolet;
+}
+
+.btn-success, .btn-danger {
+    margin-left: 10px; /* Abstand zwischen den Buttons */
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+/* Navigation */
+.navbar-nav .nav-link.active {
+    color: red;
+}
+
+/* To-do-Eintrag und Buttons im Listenelement */
+.todo-item {
+    display: flex;
+    justify-content: space-between; /* Der Text links, die Buttons rechts */
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Optional: Linie zwischen den Einträgen */
+}
+
+.todo-text {
+    flex-grow: 1; /* Lässt den Text so viel Platz wie nötig einnehmen */
+}
+
+.todo-item button {
+    flex-shrink: 0; /* Buttons behalten ihre Größe */
+}
